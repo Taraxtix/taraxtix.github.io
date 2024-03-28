@@ -1,0 +1,40 @@
+{
+    "english": {
+        "About":{
+            "persoInfos":{
+                "title": "Personal Information",
+                "name": "Full Name: BRAUER Antonin",
+                "status": "Current Status: Student"
+            },
+            "studies": {
+                "title": "Studies",
+                "current": "Currently at \"Université de Bordeaux\" 3rd year of License",
+                "diplomasTitle": "Diplomas",
+                "diplomas": [
+                    "Scientific Baccalaureate (2020) - Specialty Engineering Sciences - Very Good Mention"
+                ]
+            }
+        },
+        "Home": {},
+        "Contact": {}
+    },
+    "french": {
+        "About":{
+            "persoInfos":{
+                "title": "Informations personnelles",
+                "name": "Nom complet: BRAUER Antonin",
+                "status": "Current Status: Student"
+            },
+            "studies": {
+                "title": "Etudes",
+                "current": "Actuellement à \"Université de Bordeaux\" 3eme années de Licence",
+                "diplomasTitle": "Diplômes",
+                "diplomas": [
+                    "Baccalauréat Scientifique (2020) - Spécialité Sciences de l'Ingénieur - Mention Tres Bien"
+                ]
+            }
+        },
+        "Home": {},
+        "Contact": {}
+    }
+}

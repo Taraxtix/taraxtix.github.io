@@ -1,0 +1,26 @@
+{
+	"LastName": {
+		"fr": "Nom: BRAUER",
+		"en": "Last name: BRAUER"
+	},
+	"FirstName": {
+		"fr": "Prénom: Antonin",
+		"en": "First name: Antonin"
+	},
+	"Address": {
+		"fr": "Adresse: 33400 Talence, FRANCE",
+		"en": "Address: 33400 Talence, FRANCE"
+	},
+	"Introduction": {
+		"fr": "Présentation",
+		"en": "Introduction"
+	},
+	"Education": {
+		"fr": "Formation",
+		"en": "Education"
+	},
+	"Projects": {
+		"fr": "Projets",
+		"en": "Projects"
+	}
+}

@@ -1,4 +1,4 @@
-async function fill_text(text) {
+function fill_text(text) {
   lang = document.getElementsByClassName('lang');
 
   for (let i = 0; i < lang.length; i++) {

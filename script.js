@@ -15,7 +15,7 @@ function fill_age() {
   document.getElementById('Age').innerHTML = 'Age: ' + age;
 }
 
-text = fetch('text.json').then(res => res.json());
+text = fetch('text.json').then(res => res.json()).then(json => json);
 
 window.onload = init;
 async function init() {

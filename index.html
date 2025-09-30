@@ -11,40 +11,56 @@
 <body>
 
 	<header>
-		Photo
+		<div id="Photo">
+			Photo
+		</div>
+		<section id="Quick Infos Section">
+				<h2 id="Quick Infos" class="lang"></h2>
+				<div class="columns">
+					<div class="lines">
+						<p id="LastName" class="lang"/>
+						<p id="FirstName" class="lang"/>
+					</div>
+					<div class="lines">
+						<p>Alias: Taraxtix</p>
+						<p id="Age"/>
+					</div>
+					<div class="lines">
+						<p id="Address" class="lang"/>
+					</div>
+				</div>
+		</section>
 		<nav>
-			<a id="Github" href="https://github.com/Taraxtix" >Github</a>
-			<a id="Linkedin" href="https://www.linkedin.com/in/taraxtix/">LinkedIn</a>
+			<img
+				src="github-mark/github-mark-white.svg"
+				class="link-logo"
+				alt="Github"
+				onclick="window.open('https://github.com/Taraxtix')"
+			/>
+			<img
+				src="linkedin.svg"
+				class="link-logo"
+				alt="Linkedin"
+				onclick="window.open('https://www.linkedin.com/in/taraxtix/')"
+			/>
 		</nav>
 	</header>
 
 	<div id="MainContent">
+		<article>
 
-		<aside>
-			<section id="Quick Infos Section">
-				<h2 id="Quick Infos" class="lang"></h2>
-				<p id="LastName" class="lang"/>
-				<p id="FirstName" class="lang"/>
-				<p>Alias: Taraxtix</p>
-				<p id="Age"/>
-				<p id="Address" class="lang"/>
-		</section>
-	</aside>
+			<section id="Introduction">
+				<h1 id="Introduction" class="lang"/>
+			</section>
 
-	<article>
+			<section id="Education">
+				<h1 id="Education" class="lang"/>
+			</section>
 
-		<section id="Introduction">
-			<h1 id="Introduction" class="lang"/>
-		</section>
-
-		<section id="Education">
-			<h1 id="Education" class="lang"/>
-		</section>
-
-		<section id="Projects">
-			<h1 id="Projects" class="lang"/>
-		</section>
-	</article>
-</div>
+			<section id="Projects">
+				<h1 id="Projects" class="lang"/>
+			</section>
+		</article>
+	</div>
 </body>
 </html>

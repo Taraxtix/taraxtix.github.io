@@ -26,5 +26,9 @@
 	"Projects": {
 		"fr": "Projets",
 		"en": "Projects"
+	},
+	"Experience": {
+		"fr": "Experience professionnelle",
+		"en": "Professional experience"
 	}
 }

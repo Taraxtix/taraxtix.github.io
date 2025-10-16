@@ -11,17 +11,17 @@
 		"fr": "Adresse: 33400 Talence, FRANCE",
 		"en": "Address: 33400 Talence, FRANCE"
 	},
-	"Introduction": {
+	"Introduction-Title": {
 		"fr": "Présentation",
 		"en": "Introduction"
 	},
-	"Education": {
+	"Education-Title": {
 		"fr": "Formation",
 		"en": "Education"
 	},
 	"Education-M2": {
-		"fr": "2026: Master 2 Informatique, spécialité ASPIC (Systèmes Autonomes, Perception, Interaction et Contrôle), Université de Bordeaux",
-		"en": "2026: Master's degree in Computer Science, specialization ASPIC (Autonomous Systems, Perception, Interaction and Control), University of Bordeaux"
+		"fr": "2026: Master 2 Informatique, spécialité ASPIC (Systèmes Autonomes, Perception, Interaction et Contrôle), Université de Bordeaux (En cours)",
+		"en": "2026: Master's degree in Computer Science, specialization ASPIC (Autonomous Systems, Perception, Interaction and Control), University of Bordeaux (Ongoing)"
 	},
 	"Education-L3": {
 		"fr": "2024: Licence 3 Informatique, Université de Bordeaux",
@@ -31,11 +31,11 @@
 		"fr": "2020: Baccalauréat Scientifique, spécialité Mathématiques, mention Très Bien, Lycée Gustave Eiffel, Bordeaux",
 		"en": "2020: Scientific Baccalaureate, specialization in Mathematics, with highest honors, Lycée Gustave Eiffel, Bordeaux"
 	},
-	"Projects": {
+	"Projects-Title": {
 		"fr": "Projets",
 		"en": "Projects"
 	},
-	"Experience": {
+	"Experience-Title": {
 		"fr": "Experience professionnelle",
 		"en": "Professional experience"
 	}

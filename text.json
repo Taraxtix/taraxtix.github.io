@@ -19,6 +19,18 @@
 		"fr": "Formation",
 		"en": "Education"
 	},
+	"Education-M2": {
+		"fr": "2026: Master 2 Informatique, spécialité ASPIC (Systèmes Autonomes, Perception, Interaction et Contrôle), Université de Bordeaux",
+		"en": "2026: Master's degree in Computer Science, specialization ASPIC (Autonomous Systems, Perception, Interaction and Control), University of Bordeaux"
+	},
+	"Education-L3": {
+		"fr": "2024: Licence 3 Informatique, Université de Bordeaux",
+		"en": "2024: Bachelor's degree in Computer Science, University of Bordeaux"
+	},
+	"Education-BAC": {
+		"fr": "2020: Baccalauréat Scientifique, spécialité Mathématiques, mention Très Bien, Lycée Gustave Eiffel, Bordeaux",
+		"en": "2020: Scientific Baccalaureate, specialization in Mathematics, with highest honors, Lycée Gustave Eiffel, Bordeaux"
+	},
 	"Projects": {
 		"fr": "Projets",
 		"en": "Projects"

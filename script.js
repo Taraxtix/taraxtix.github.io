@@ -14,11 +14,24 @@ function fill_text(text) {
   lang = document.getElementsByClassName('lang');
 
   for (let i = 0; i < lang.length; i++) {
-    let lang_item = text[lang[i].id];
-    if (language == 'fr')
-      lang[i].innerHTML = lang_item.fr;
-    else
-      lang[i].innerHTML = lang_item.en;
+    let lang_object = text[lang[i].id];
+    let lang_item = lang_object[language];
+
+    if (lang[i].id.endsWith('-Details')) {
+      lang[i].innerHTML = '';
+      let details = lang_item.split('#');
+      for (let j = 0; j < details.length; j++) {
+        lang[i].appendChild(document.createElement('li')).innerHTML =
+            details[j];
+      }
+      continue;
+    }
+
+    children = [...lang[i].children];
+    lang[i].innerHTML = lang_item;
+    for (let j = 0; j < children.length; j++) {
+      lang[i].appendChild(children[j]);
+    }
   }
 }
 

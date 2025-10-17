@@ -11,10 +11,12 @@
 		"fr": "Adresse: 33400 Talence, FRANCE",
 		"en": "Address: 33400 Talence, FRANCE"
 	},
+
 	"Introduction-Title": {
 		"fr": "Présentation",
 		"en": "Introduction"
 	},
+
 	"Education-Title": {
 		"fr": "Formation",
 		"en": "Education"
@@ -31,14 +33,17 @@
 		"fr": "2020: Baccalauréat Scientifique, spécialité Mathématiques, mention Très Bien, Lycée Gustave Eiffel, Bordeaux",
 		"en": "2020: Scientific Baccalaureate, specialization in Mathematics, with highest honors, Lycée Gustave Eiffel, Bordeaux"
 	},
+
 	"Projects-Title": {
 		"fr": "Projets",
 		"en": "Projects"
 	},
+
 	"Experience-Title": {
 		"fr": "Experience professionnelle",
 		"en": "Professional experience"
 	},
+
 	"Experience-TheHostel-CDI": {
 		"fr": "02/2023 - Présent: GameMaster en CDI chez The Hostel Escape Game, Bordeaux",
 		"en": "02/2023 - Present: GameMaster on permanent contract at The Hostel Escape Game, Bordeaux"
@@ -47,6 +52,7 @@
 		"fr": "Accueil des clients#Acteur et Game Master dans les salles de jeux#Élaboration de scripts pour optimiser les processus de l'entreprise#Aide à la configuration des salles lors de leurs créations#Design de circuits imprimé pour l'amélioration des salles",
 		"en": "Welcoming customers#Actor and Game Master in the game rooms#Scriptwriting to optimize company processes#Assisting in room setup during their creation#Designing printed circuits for room improvement"
 	},
+
 	"Experience-TheHostel-AE": {
 		"fr": "05/2022 - 02/2023: GameMaster en auto-entrepreneur chez The Hostel Escape Game, Bordeaux",
 		"en": "05/2022 - 02/2023: GameMaster as self-employed at The Hostel Escape Game, Bordeaux"
@@ -55,6 +61,7 @@
 		"fr": "Accueil des clients#Acteur et Game Master dans les salles de jeux",
 		"en": "Welcoming customers#Actor and Game Master in the game rooms"
 	},
+
 	"Experience-DistriCenter": {
 		"fr": "06/2020 - 09/2020: Vendeur chez DistriCenter",
 		"en": "06/2020 - 09/2020: Seller at DistriCenter"

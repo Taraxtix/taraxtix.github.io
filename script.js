@@ -1,8 +1,24 @@
+let language = navigator.language || navigator.userLanguage;
+if (language.startsWith('fr')) {
+  language = 'fr';
+} else {
+  language = 'en';
+}
+
+async function setLanguage(lang) {
+  language = lang;
+  fill_text(await text);
+}
+
 function fill_text(text) {
   lang = document.getElementsByClassName('lang');
 
   for (let i = 0; i < lang.length; i++) {
-    lang[i].innerHTML = text[lang[i].id].fr;
+    let lang_item = text[lang[i].id];
+    if (language == 'fr')
+      lang[i].innerHTML = lang_item.fr;
+    else
+      lang[i].innerHTML = lang_item.en;
   }
 }
 

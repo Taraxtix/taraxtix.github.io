@@ -30,8 +30,8 @@ function Header({text}: HeaderProps) {
                 <ImgLink href="https://github.com/Taraxtix"
                          src={
                              window.matchMedia('(prefers-color-scheme: dark)').matches ?
-                                 "../public/github-mark-white.svg" :
-                                 "../public/github-mark.svg"
+                                 "../../public/github-mark-white.svg" :
+                                 "../../public/github-mark.svg"
                          }
                          alt="github"
                 />

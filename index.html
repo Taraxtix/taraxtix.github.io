@@ -1,88 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Taraxtix</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="script" href="script.js">
-	<link rel="document" href="text.json" id="text">
-	<script src="script.js"></script>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Taraxtix</title>
 </head>
 <body>
-
-	<div class="flags">
-
-		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Français" class="flag" onclick="setLanguage('fr')"/>
-		<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/English_language_-_United_States%2C_Canada_and_the_United_Kingdom.svg" alt="English" class="flag" onclick="setLanguage('en')"/>
-	</div>
-
-		<aside>
-		<div class="horizontal-container">
-			<div id="Photo">
-				Photo
-			</div>
-		</div>
-		<section id="Quick Infos Section">
-						<p id="LastName" class="lang"></p>
-						<p id="FirstName" class="lang"></p>
-						<p>Alias: Taraxtix</p>
-						<p id="Age"></p>
-						<p id="Address" class="lang"></p>
-						<p id="Email">Mail: antonin.brauer@yahoo.fr</p>
-						<p id="Email">Mail: antonin.brauer@etu.u-bordeaux.fr</p>
-		</section>
-		<nav>
-			<img
-				src="img/github-mark/github-mark-white.svg"
-				class="link-logo"
-				alt="Github"
-				onclick="window.open('https://github.com/Taraxtix')"
-			/>
-			<img
-				src="img/linkedin.svg"
-				class="link-logo"
-				alt="Linkedin"
-				onclick="window.open('https://www.linkedin.com/in/taraxtix/')"
-			/>
-		</nav>
-	</aside>
-
-	<div id="MainContent">
-		<article>
-
-			<section id="Introduction">
-				<h1 id="Introduction-Title" class="lang"></h1>
-			</section>
-
-			<section id="Education">
-				<h1 id="Education-Title" class="lang"></h1>
-				<ul>
-					<li id="Education-M2" class="lang" ></li>
-					<li id="Education-L3" class="lang" ></li>
-					<li id="Education-BAC" class="lang"></li>
-				</ul>
-			</section>
-
-			<section id="Experience">
-				<h1 id="Experience-Title" class="lang"></h1>
-				<ul>
-					<li id="Experience-TheHostel-CDI" class="lang">
-						<ul id="Experience-TheHostel-CDI-Details" class="lang"></ul>
-					</li>
-					<li id="Experience-TheHostel-AE" class="lang">
-						<ul id="Experience-TheHostel-AE-Details" class="lang"></ul>
-					</li>
-					<li id="Experience-DistriCenter" class="lang">
-						<ul id="Experience-DistriCenter-Details" class="lang"></ul>
-					</li>
-				</ul>
-			</section>
-
-			<section id="Projects">
-				<h1 id="Projects-Title" class="lang"></h1>
-			</section>
-
-		</article>
-	</div>
+<div id="root"></div>
+<script src="/src/main.tsx" type="module"></script>
 </body>
 </html>

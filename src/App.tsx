@@ -30,14 +30,17 @@ function App() {
 const sectionPaddingVertical = 4
 const sectionPaddingHorizontal = 4
 const sectionStyle: React.CSSProperties = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     scrollMarginTop: '5rem',
     marginTop: '5rem',
-    paddingTop: sectionPaddingVertical / 2 + 'rem',
-    paddingBottom: sectionPaddingVertical + 'rem',
-    paddingLeft: sectionPaddingHorizontal + 'rem',
-    paddingRight: sectionPaddingHorizontal + 'rem',
-    maxWidth: 'calc(90vw - 16rem)',
-    minWidth: '60vw',
+    paddingTop: sectionPaddingVertical + 'vh',
+    paddingBottom: sectionPaddingVertical + 'vh',
+    paddingLeft: sectionPaddingHorizontal + 'vw',
+    paddingRight: sectionPaddingHorizontal + 'vw',
+    maxWidth: '70vw',
+    minWidth: '40vw',
     textAlign: 'center',
     border: '1px solid white',
     borderRadius: '1rem',

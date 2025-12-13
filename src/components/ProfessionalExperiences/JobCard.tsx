@@ -10,7 +10,7 @@ function JobCard({title, details}: JobCardProps) {
 
     return (
         <div style={cardStyle} onClick={() => setClicked(!clicked)}>
-            <h2>{title}</h2>
+            <h2>{title.split(":")[0]}<br/><br/>{title.split(":")[1]}</h2>
             {clicked ?
                 <ul>
                     {Object.entries(details).map(([key, detail]) => {
@@ -27,7 +27,8 @@ const cardStyle: React.CSSProperties = {
     borderRadius: '1rem',
     padding: '1rem',
     margin: '1rem',
-    minWidth: '20rem',
+    minWidth: '40vw',
+    width: '70%',
     cursor: 'pointer',
 }
 

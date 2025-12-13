@@ -32,6 +32,8 @@ const ulStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1.5rem',
+    minWidth: '20rem',
+    maxWidth: '50rem',
 }
 
 export default Education;

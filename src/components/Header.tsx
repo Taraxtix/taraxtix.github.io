@@ -13,7 +13,7 @@ function Header({text}: HeaderProps) {
     return (
         <div id="header" style={headerStyle}>
             <div id="photo">
-                <img id="imgPhoto" alt="photo" style={photoStyle} src="../../public/logo.png"/> {/*TODO: Add photo*/}
+                <img id="imgPhoto" alt="photo" style={photoStyle} src="logo.png"/> {/*TODO: Add photo*/}
             </div>
 
             <div id="anchors" style={anchorsStyle}>
@@ -24,14 +24,14 @@ function Header({text}: HeaderProps) {
 
             <div id="social" style={socialStyle}>
                 <ImgLink href="https://www.linkedin.com/in/antonin-brauer-03ba5919a/"
-                         src="../../public/linkedin.svg"
+                         src="linkedin.svg"
                          alt="linkedin"
                 />
                 <ImgLink href="https://github.com/Taraxtix"
                          src={
                              window.matchMedia('(prefers-color-scheme: dark)').matches ?
-                                 "../../public/github-mark-white.svg" :
-                                 "../../public/github-mark.svg"
+                                 "github-mark-white.svg" :
+                                 "github-mark.svg"
                          }
                          alt="github"
                 />

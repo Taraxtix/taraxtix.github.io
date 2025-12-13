@@ -13,29 +13,5 @@ jobs:
         uses: mmedoo/build-react-on-push@v1.3
         with:
           GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
-      - name: Move files
-        env:
-          GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
-        run: |
-          BRANCH_NAME="build"
-          TARGET_DIR="/"
-          APP_DIR="/"
-
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git fetch origin
-          git checkout build
-
-          mkdir -p public
-
-          mv \
-          logo.png \
-          linkedin.svg \
-          github-mark.svg \
-          github-mark-white.svg \
-          public
-
-          git commit -am 'Move public files'
-          git push https://x-access-token:${{ inputs.GITHUB_TOKEN }}@github.com/${{ github.repository }} build --force || git push build --force
 
 # Script from https://github.com/marketplace/actions/build-and-publish-react

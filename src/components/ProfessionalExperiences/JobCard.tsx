@@ -13,8 +13,8 @@ function JobCard({title, details}: JobCardProps) {
             <h2>{title}</h2>
             {clicked ?
                 <ul>
-                    {details.map((detail) => {
-                        return <li>{detail}</li>
+                    {Object.entries(details).map(([key, detail]) => {
+                        return <li key={key}>{detail}</li>
                     })}
                 </ul> : <p style={detailPlaceholderStyle}>Click for details</p>
             }

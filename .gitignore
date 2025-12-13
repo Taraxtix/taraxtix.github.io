@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Symbolic links of public files
+src/**/*.svg
+src/**/*.png
+src/*.svg
+src/*.png

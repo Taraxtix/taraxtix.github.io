@@ -12,6 +12,6 @@ jobs:
       - name: Build
         uses: mmedoo/build-react-on-push@v1.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
 
 # Script from https://github.com/marketplace/actions/build-and-publish-react

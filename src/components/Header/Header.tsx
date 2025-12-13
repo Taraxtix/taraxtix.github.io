@@ -1,9 +1,9 @@
 // noinspection HtmlUnknownAnchorTarget
 
 import React from "react";
-import '../App.css'
-import ImgLink from "./ImgLink.tsx";
-import type {Translation} from "../lang.ts";
+import '../../App.css'
+import ImgLink from "../ImgLink.tsx";
+import type {Translation} from "../../lang.ts";
 
 interface HeaderProps {
     text: Translation

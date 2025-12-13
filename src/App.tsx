@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Header from './components/Header.tsx'
+import Header from './components/Header/Header.tsx'
 import QuickPresentation from "./components/QuickPresentation.tsx";
 import {getText, type Lang} from "./lang.ts";
 import Footer from "./components/Footer.tsx";

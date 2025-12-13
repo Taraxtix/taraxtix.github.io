@@ -12,7 +12,7 @@ function JobCard({title, details}: JobCardProps) {
         <div style={cardStyle} onClick={() => setClicked(!clicked)}>
             <h2>{title.split(":")[0]}<br/><br/>{title.split(":")[1]}</h2>
             {clicked ?
-                <ul>
+                <ul style={ulStyle}>
                     {Object.entries(details).map(([key, detail]) => {
                         return <li key={key}>{detail}</li>
                     })}
@@ -30,11 +30,18 @@ const cardStyle: React.CSSProperties = {
     minWidth: '40vw',
     width: '70%',
     cursor: 'pointer',
+    display:'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
 }
 
 const detailPlaceholderStyle: React.CSSProperties = {
     color: 'gray',
     fontSize: '0.8rem',
+}
+
+const ulStyle: React.CSSProperties = {
+    textAlign: 'left',
 }
 
 export default JobCard

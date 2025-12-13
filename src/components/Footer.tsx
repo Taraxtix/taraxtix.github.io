@@ -1,5 +1,5 @@
 import type {Lang} from "../lang.ts";
-import type {SetState} from "./typeShortcuts.ts";
+import type {SetState} from "../shortcuts.ts";
 import ImgButton from "./ImgButton.tsx";
 import React from "react";
 

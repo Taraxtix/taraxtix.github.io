@@ -1,4 +1,5 @@
 import {type Translation} from "../lang.ts";
+import {h1AnchorStyle} from "../shortcuts.ts";
 
 interface QuickPresentationProps {
     text: Translation['QuickPresentation']
@@ -15,7 +16,7 @@ function QuickPresentation({text}: QuickPresentationProps) {
 
     return (
         <div style={{cursor: 'default'}}>
-            <h1>{text.h1}</h1>
+            <h1 id="QuickPresentation" style={h1AnchorStyle}>{text.h1}</h1>
             <p>{text.firstName}</p>
             <p>{text.lastName}</p>
             <p>Alias: Taraxtix</p>

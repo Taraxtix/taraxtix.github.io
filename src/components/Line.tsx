@@ -5,7 +5,7 @@ function Line() {
 }
 
 const color = 'white'
-const widthPercentage = 120
+const widthPercentage = 100
 const marginVertical = '2rem'
 
 const hrStyle = {

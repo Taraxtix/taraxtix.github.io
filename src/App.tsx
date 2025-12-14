@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Header from './components/Header/Header.tsx'
 import QuickPresentation from "./components/QuickPresentation.tsx";
 import {getText, type Lang} from "./lang.ts";
@@ -10,11 +10,40 @@ import ProfessionalExperience from "./components/ProfessionalExperiences/Profess
 function App() {
     const [lang, setLang] = useState<Lang>('fr');
     const text = getText(lang);
-    return (
-        <>
-            <Header text={text}/>
 
-            <div style={sectionStyle}>
+    const mediaMatcher = window.matchMedia('(max-device-width: 750px)')
+    const [isMobile, setIsMobile] = React.useState(mediaMatcher.matches)
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(mediaMatcher.matches)
+        mediaMatcher.addEventListener('change', handleResize)
+        return () => mediaMatcher.removeEventListener('change', handleResize)
+    })
+
+    const sectionPaddingVertical = 4
+    const sectionPaddingHorizontal = 4
+    const sectionStyle: React.CSSProperties = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        scrollMarginTop: '5rem',
+        marginTop: '5rem',
+        paddingTop: isMobile ? 'unset' : sectionPaddingVertical + 'vh',
+        paddingBottom: isMobile ? 'unset' : sectionPaddingVertical + 'vh',
+        paddingLeft: isMobile ? 'unset' : sectionPaddingHorizontal + 'vw',
+        paddingRight: isMobile ? 'unset' : sectionPaddingHorizontal + 'vw',
+        maxWidth: isMobile ? '85vw' : '70vw',
+        minWidth: isMobile ? 'unset' : '40vw',
+        textAlign: 'center',
+        border: '1px solid white',
+        borderRadius: '1rem',
+    }
+
+    return (
+        <div id="appContainer">
+            <Header text={text} isMobile={isMobile}/>
+
+            <div id="content" style={sectionStyle}>
                 <QuickPresentation text={text.QuickPresentation}/>
                 <Line/>
                 <Education text={text.Education}/>
@@ -23,27 +52,8 @@ function App() {
             </div>
 
             <Footer setLang={setLang}/>
-        </>
+        </div>
     )
-}
-
-const sectionPaddingVertical = 4
-const sectionPaddingHorizontal = 4
-const sectionStyle: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    scrollMarginTop: '5rem',
-    marginTop: '5rem',
-    paddingTop: sectionPaddingVertical + 'vh',
-    paddingBottom: sectionPaddingVertical + 'vh',
-    paddingLeft: sectionPaddingHorizontal + 'vw',
-    paddingRight: sectionPaddingHorizontal + 'vw',
-    maxWidth: '70vw',
-    minWidth: '40vw',
-    textAlign: 'center',
-    border: '1px solid white',
-    borderRadius: '1rem',
 }
 
 export default App

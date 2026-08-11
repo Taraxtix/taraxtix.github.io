@@ -7,19 +7,28 @@ interface JobCardProps {
 
 function JobCard({title, details}: JobCardProps) {
     const [clicked, setClicked] = useState(false)
+    const firstColonIndex = title.indexOf(":");
+    const datePart = firstColonIndex !== -1 ? title.slice(0, firstColonIndex).trim() : title;
+    const restPart = firstColonIndex !== -1 ? title.slice(firstColonIndex + 1).trim() : "";
 
     return (
         <div style={cardStyle} onClick={() => setClicked(!clicked)}>
-            <h2>{title.split(":")[0]}<br/><br/>{title.split(":")[1]}</h2>
-            {clicked ?
+            <h2>
+                {datePart}
+                <br /><br />
+                {restPart}
+            </h2>
+            {clicked ? (
                 <ul style={ulStyle}>
-                    {Object.entries(details).map(([key, detail]) => {
-                        return <li key={key}>{detail}</li>
-                    })}
-                </ul> : <p style={detailPlaceholderStyle}>Click for details</p>
-            }
+                    {Object.entries(details).map(([key, detail]) => (
+                        <li key={key}>{detail}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p style={detailPlaceholderStyle}>Click for details</p>
+            )}
         </div>
-    )
+    );
 }
 
 const cardStyle: React.CSSProperties = {

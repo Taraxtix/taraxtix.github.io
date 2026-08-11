@@ -14,6 +14,16 @@ const fr = {
     },
     ProfessionalExperience: {
         h1: "Expérience professionnelles",
+        StageThales: {
+            title: "04/2026 - 09/2026: Stage: \"Mise en place d'un driver mémoire en Rust pour un système d'exploitation aéronautique\" chez Thales AVS, Mérignac",
+            details: [
+                "Étude du driver existant",
+                "Portage en Rust pour une cible embarqué",
+                "Programmation `no_std`",
+                "Mise à jour/Mise en place d'un standard de codage interne spécifique à Rust",
+                "Étude des capacité de Rust dans un contexte certifié (DO-178C / ARINC653)",
+            ],
+        },
         TheHostelCDI: {
             title: "02/2023 - 04/2026: GameMaster en CDI chez The Hostel Escape Game, Bordeaux",
             details: [
@@ -58,8 +68,18 @@ const en = {
     },
     ProfessionalExperience: {
         h1: "Professional experience",
+        StageThales: {
+            title: "04/2026 - 09/2026: Internship: \"Implementation of a Rust memory driver for an aeronautical operating system\" at Thales AVS, Mérignac",
+            details: [
+                "Analysis of the existing driver",
+                "Porting to Rust for an embedded target",
+                "`no_std` programming",
+                "Updating/establishing an internal coding standard dedicated to Rust",
+                "Evaluation of Rust capabilities in a certified environment (DO-178C / ARINC653)",
+            ],
+        },
         TheHostelCDI: {
-            title: "02/2023 - Present: GameMaster on permanent contract at The Hostel Escape Game, Bordeaux",
+            title: "02/2023 - 04/2026: GameMaster on permanent contract at The Hostel Escape Game, Bordeaux",
             details: [
                 "Welcoming customers",
                 "Actor and Game Master in the game rooms",

@@ -15,7 +15,7 @@ const fr = {
     ProfessionalExperience: {
         h1: "Expérience professionnelles",
         TheHostelCDI: {
-            title: "02/2023 - Présent: GameMaster en CDI chez The Hostel Escape Game, Bordeaux",
+            title: "02/2023 - 04/2026: GameMaster en CDI chez The Hostel Escape Game, Bordeaux",
             details: [
                 "Accueil des clients",
                 "Acteur et Game Master dans les salles de jeux",
